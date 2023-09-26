@@ -52,7 +52,7 @@ body {
   gap: 0;
   margin-top: -150px;
 }
-h1 {
+.titulo1 {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 50px;
@@ -85,7 +85,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.804); /* Sombra no texto do p */
   color: var(--quinta-cor);
 }
-.div-bolsa h1 {
+.titulo {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 50px;
@@ -99,14 +99,7 @@ h1 {
 .sapato-imagem {
   height: 500px;
 }
-.div-sapato h1 {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  text-align: center;
-  color: var(--sexta-cor);
-}
+
 .logoft {
   height: 200px;
   background-color: var(--cor-secundaria);
