@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Css do bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--Css do projeto-->
+    <link rel="stylesheet" href="./estilizacao/root.css" />
+    <link rel="stylesheet" href="./estilizacao/estiloPgCatFem.css" />
+    <!--Js do bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      defer
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--titulo da pagina-->
+    <title>Categoria feminino</title>
+  </head>
+  <body>
+    <!--Cabeçalho+navBar-->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.gif" alt="Logo da página" />
+        </div>
+        <ul class="nav-ancoras">
+          <li><a href="paginaPrincipal.html">Home</a></li>
+          <li><a href="pgCatFem.html">Feminino</a></li>
+          <li><a href="">Masculino</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- sessão de vestidos -->
+    <section class="vestido">
+      <div class="div-vestido">
+        <h1>Vestidos</h1>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/vestidoVinho.png"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido vinho"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Cor do Pecado</h5>
+              <p>
+                Maravilhoso vestido semi-princesa,<br />
+                com caimento ombro a ombro de cetim.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/vestidoDourado.webp"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido dourado"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Noite Estrelada</h5>
+              <p>
+                Vestido impactante, corte de camisa em "V"<br />
+                mid com as costas compridas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/vestidoAzul.webp"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido azul marinho"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Mar Profundo</h5>
+              <p>
+                Vestido azul profundo,<br />tomara que caia com detalhes em
+                brilho.<br />
+                Corte godê com bolsos.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/vestidoLilas.webp"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido lilas"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Lilá</h5>
+              <p>
+                Vestido ideal para eventos durante o dia,<br />
+                corte de camisa em "V"<br />
+                e uma fenda de tirar o fôlego compridas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/vestidoRosa.webp"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido rosa"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Barbie</h5>
+              <p>
+                Vestido com manga capa, caimento evasê e<br />
+                uma fenda bem sexy.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/vestidoSalmao.png"
+              class="vestido-imagem"
+              alt="imagem de uma mulher com um vestido salmão"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vestido Sparta</h5>
+              <p>
+                Vestido sexy e refinado, corte em "V",<br />
+                mangas detalhadas em babado e corte evasê.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-vestidos">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!--sessão de bolsa-->
+    <section class="bolsa">
+      <div class="div-bolsa">
+        <h1>Bolsas</h1>
+      </div>
+      <div id="carouselBolsas" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/bolsaAzul.webp"
+              class="bolsa-imagem"
+              alt="imagem de uma mulher segurando uma bolsa prquena azul"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Pezinho na Índia</h5>
+              <p>
+                A bolsa azul marinho que combina com você,<br />
+                riqueza de detalhes e acabamento.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/bolsaDourada.png"
+              class="bolsa-imagem"
+              alt="imagem de uma bolsa dourada"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Correntes</h5>
+              <p>
+                Você vai se amarrar nessa bolsa dourada,<br />
+                ideial para sua festa.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/bolsaMarfim.png"
+              class="bolsa-imagem"
+              alt="imagem de uma bolsa marfim"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Pérola</h5>
+              <p>
+                Bolsa acetinada e perolara<br />
+                pra você não passar despecebida.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/bolsaPalha.png"
+              class="bolsa-imagem"
+              alt="imagem de bolsa pequena de palha"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Palmeira</h5>
+              <p>
+                Essa é a bolsa ideal para os eventos diurnos,<br />
+                um coringa no armário!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/bolsaRoxa.png"
+              class="bolsa-imagem"
+              alt="imagem de uma cluch roxa"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Fúcsia</h5>
+              <p>Bolsa compacta, mas não se engane, cabe tudo!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/bolsaVerde.png"
+              class="bolsa-imagem"
+              alt="imagem de uma mulher segurando uma bolsa verde escuro"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bolsa Militar Chic</h5>
+              <p>
+                Bolsa refinada e elegante,que te acompanha<br />
+                de uma festa até um escritório.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselBolsas"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselBolsas"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-vestidos">
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBolsas"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!--sessão de sapatos-->
+    <section class="sapato">
+      <div class="div-sapato">
+        <h1>Sapatos</h1>
+      </div>
+      <div id="carouselSapatos" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/sapatoDourado.png"
+              class="sapato-imagem"
+              alt="imagem de um par de salto alto dourado"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Armagedom</h5>
+              <p>Saltos que valorizam seu look!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/sapatoGlitter.webp"
+              class="sapato-imagem"
+              alt="imagem de um par de saltos com glitter"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Shine</h5>
+              <p>Esse é você que brilha por onde passa.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/sapatoNude.webp"
+              class="sapato-imagem"
+              alt="imagem de um par de saltos nude"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Pena</h5>
+              <p>O par ideal para conforto e elegancia juntos!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/sapatoPerola.webp"
+              class="sapato-imagem"
+              alt="imagem de par de sapatos com glitter com perolas"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Pérola</h5>
+              <p>Sapatos elegantes, confortaveis e maravolhosos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/sapatoPreto.png"
+              class="sapato-imagem"
+              alt="imagem de um par de saltos preto"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Pretinho nada básico</h5>
+              <p>
+                Saindo do óbvio, mas nem tanto. Esse é o sapato coringa no
+                armário.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/sapatoBranco.webp"
+              class="sapato-imagem"
+              alt="imagem de um par de sapatos altos branco"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sapatos Alvo</h5>
+              <p>
+                Par de sapatos elegante,que te acompanha<br />
+                de uma festa até um escritório.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSapatos"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSapatos"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-vestidos">
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSapatos"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <!-- Footer -->
+      <footer>
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row align-items-center">
+            <!--Grid column-->
+            <div class="logoft col-lg-6 col-md-12 mb-4 mb-md-0">
+              <img src="./images/logo.gif" alt="Logo da página" />
+            </div>
+
+            <!--Grid column-->
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Fale Conosco</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link da pg fale conosco</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Nossos Fundadores</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    >Link da pg nossos fundadores</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </body>
+</html>
