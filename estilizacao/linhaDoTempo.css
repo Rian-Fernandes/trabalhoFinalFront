@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     width: 3px;
-    background-color: #26c6da;
+    background-color: #283b5e;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -29,7 +29,7 @@
     width: 25px;
     height: 25px;
     right: -11px;
-    background-color: #26c6da;
+    background-color: #283b5e;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
