@@ -9,10 +9,9 @@ Este projeto tem a intenção de simular uma loja de roupas de luxo. Nela você 
 - Contatos dos fundadores;
 - Fale conosco;
 - Roupas incríveis;
-
 - 
 ## Tecnologias usadas:
-- [Trello](https://trello.com/b/qRhzIPh5/projeto-final-database);
+- [Trello](https://trello.com/b/Bv7Wx4qS/trabalho-final-de-front);
 - [Visual Studio Code 1.82](https://code.visualstudio.com/download);
 - [Bootstrap 5.3](https://getbootstrap.com/);
 
