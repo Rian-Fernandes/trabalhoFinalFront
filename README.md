@@ -19,7 +19,7 @@ Este projeto tem a intenção de simular uma loja de roupas de luxo. Nela você 
 
 
 ⚜️ Siga nossos fundadores:
-[Eduardo](https://github.com/eduardocs90);
+[Eduardo Carneiro](https://github.com/eduardocs90);
 [Felipe Sutter](https://github.com/FelipeSutter);
 [Lucas Gonzaga](https://github.com/olucasgon);
 [Mahyara Paraquett](https://github.com/MahyParaquett);
