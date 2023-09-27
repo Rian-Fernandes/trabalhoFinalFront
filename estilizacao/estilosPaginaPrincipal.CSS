@@ -1,106 +1,106 @@
 body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-    background-color: var(--cor-primaria);
+  background-color: var(--cor-primaria);
 }
 
 .nav-bar {
-    background-color: var(--cor-secundaria); 
-    padding: 0px 10px; 
-    display: flex;
-    align-items: center;
-    height:40px;
-    position: relative;
+  background-color: var(--cor-secundaria); 
+  padding: 0px 10px; 
+  display: flex;
+  align-items: center;
+  height:40px;
+  position: relative;
 }
 
 .logo{
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .logo img {
-    height: 100%; 
-    object-fit: contain;
+  height: 100%; 
+  object-fit: contain;
 }
 
 .nav-ancoras {
-    list-style: none;
-    display: flex;
-    gap: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
-    
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  margin-top: 0;
+  margin-bottom: 0;
+  
 }
 
 .nav-ancoras li {
-    margin-left: 200px; 
+  margin-left: 200px; 
 }
 
 .nav-ancoras a {
-    text-decoration: none;
-    color: var(--cor-primaria); 
+  text-decoration: none;
+  color: var(--cor-primaria); 
 }
 
 .nav-ancoras a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .home {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    align-items: center;
-    gap: 0;
-    margin-top: -150px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  align-items: center;
+  gap: 0;
+  margin-top: -150px;
 }
 
 .home-text h1 {
-    font-size: 4rem;
-    line-height: 1.2;
-    margin-bottom: 2px;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2px;
 }
 
 .home-text h5 { 
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .home-text h3 {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 35px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
 }
 
 .home-image {
-    max-width: 100%;
-    width: 28rem;
-    height: auto;
-    margin-left: 25%;
+  max-width: 100%;
+  width: 28rem;
+  height: auto;
+  margin-left: 25%;
 }
 
 .btn{
-    display: inline-block;
-    padding: 15px 70px;
-    font-size: 16px;
-    font-weight: 500;
-    background: transparent;
-    border: solid 2px var(--cor-terciaria);
-    transition: all 0.5 ease;
-    color: aliceblue;
-    text-decoration: none;
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: solid 2px var(--cor-terciaria);
+  transition: all 0.5 ease;
+  color: aliceblue;
+  text-decoration: none;
 
 }
 
 .btn:hover{
-    background: coral;
-    border: 2px solid #523458;
-    color: #000;
+  background: coral;
+  border: 2px solid #523458;
+  color: #000;
 
 }
