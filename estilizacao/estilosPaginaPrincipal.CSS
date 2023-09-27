@@ -1,4 +1,4 @@
-body, ul {
+body{
     margin: 0;
     padding: 0;
 }
@@ -11,21 +11,21 @@ body{
     background-color: var(--cor-secundaria); 
     padding: 10px 10px; 
     display: flex;
-    justify-content: space-between; 
     align-items: center;
-    border-radius: 20px; 
-    margin: 40px 200px; 
-    height:60px;
+    height:40px;
+    position: relative;
 }
 
 .logo img {
     height: 60px; 
+    width: 80px;
 }
 
 .nav-ancoras {
     list-style: none;
     display: flex;
-    margin-right: 600px;
+    gap: 50px;
+    
 }
 
 .nav-ancoras li {
