@@ -1,0 +1,70 @@
+.h1 {
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-bottom: 25px;
+}
+.drop {
+  height: auto;
+  width: 25%;
+  margin: auto;
+}
+option :houver {
+  background-color: var(--cor-secundaria);
+}
+.campoNome input {
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  color: white;
+}
+.campoNome label {
+  color: var(--cor-secundaria);
+  font-size: 20px;
+  margin-right: 8px;
+}
+.campoE-mail input {
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  color: white;
+  margin-top: 10px;
+}
+.campoE-mail label {
+  color: var(--cor-secundaria);
+  font-size: 20px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+fieldset {
+  width: 50%;
+  margin: auto;
+}
+.campoNome,
+.campoE-mail {
+  margin: auto;
+  width: fit-content;
+}
+form {
+  margin: 130px;
+}
+.msg {
+  margin-right: 8px;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.msg label {
+  color: var(--cor-secundaria);
+  margin-right: 8px;
+}
+.botão {
+  background-color: var(--cor-secundaria);
+  margin-top: 10px;
+  float: right;
+  border-radius: 8px;
+  color: white;
+}
+.msg textarea {
+  box-shadow: 0 0 10px black;
+  border-radius: 8px;
+}

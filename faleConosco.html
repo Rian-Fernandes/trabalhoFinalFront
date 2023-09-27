@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./estilizacao/root.css" />
+    <link
+      rel="stylesheet"
+      href="/trabalhoFinalFront/estilizacao/estilosPaginaPrincipal.CSS"
+    />
+    <link
+      rel="stylesheet"
+      href="/trabalhoFinalFront/estilizacao/StyleFaleConosco.css"
+    />
+    <link rel="stylesheet" href="./estilizacao/estiloPgCatFem.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.gif" alt="Logo da página" />
+        </div>
+        <ul class="nav-ancoras">
+          <li><a href="">Home</a></li>
+          <li><a href="">Feminino</a></li>
+          <li><a href="">Masculino</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="h1">Fale Conosco</h1>
+      <div class="drop">
+        <select class="form-select fale" aria-label="Default select example">
+          <option selected>Escolha uma opção</option>
+          <option value="1">Sugestão</option>
+          <option value="2">Reclamação</option>
+          <option value="3">Troca</option>
+          <option value="4">Outros</option>
+        </select>
+      </div>
+      <form id="formContato" action="">
+        <fieldset>
+          <div class="campoNome">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+          </div>
+          <div class="campoE-mail">
+            <label for="e-mail">E-mail:</label>
+            <input type="text" name="e-mail" placeholder="Digite seu e-mail" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="msg">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              placeholder="Digite sua mensagem"
+              id="mensagem"
+              cols="30"
+              rows="8"
+            ></textarea>
+          </div>
+          <button class="botão" type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <script>
+      document
+        .getElementById("formContato")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Impede o envio do formulário
+
+          var nome = document.querySelector('[name="nome"]').value;
+          var email = document.querySelector('[name="e-mail"]').value;
+          var mensagem = document.querySelector('[name="mensagem"]').value;
+
+          if (
+            nome.trim() === "" ||
+            email.trim() === "" ||
+            mensagem.trim() === ""
+          ) {
+            alert("Por favor, preencha todos os campos");
+            return;
+          }
+
+          // Salvar os dados no localStorage
+          localStorage.setItem("nome", nome);
+          localStorage.setItem("email", email);
+          localStorage.setItem("mensagem", mensagem);
+
+          alert("Dados salvos com sucesso!");
+        });
+
+      // Função para acessar os dados
+      function acessarDadosLocalStorage() {
+        var nome = localStorage.getItem("nome");
+        var email = localStorage.getItem("email");
+        var mensagem = localStorage.getItem("mensagem");
+
+        console.log("Nome:", nome);
+        console.log("E-mail:", email);
+        console.log("Mensagem:", mensagem);
+      }
+
+      // Chame a função para acessar os dados quando necessário
+      acessarDadosLocalStorage();
+    </script>
+    <section class="">
+      <!-- Footer -->
+      <footer>
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row align-items-center">
+            <!--Grid column-->
+            <div class="logoft col-lg-6 col-md-12 mb-4 mb-md-0">
+              <img src="./images/logo.gif" alt="Logo da página" />
+            </div>
+
+            <!--Grid column-->
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Fale Conosco</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link da pg fale conosco</a>
+                </li>
+              </ul>
+            </div>
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Nossos Fundadores</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"
+                    >Link da pg nossos fundadores</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </body>
+</html>
