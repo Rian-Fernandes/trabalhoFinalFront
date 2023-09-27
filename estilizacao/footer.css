@@ -1,0 +1,23 @@
+.logoft {
+  height: 200px;
+  background-color: var(--cor-secundaria);
+}
+.logoft img {
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+.container {
+  background-color: var(--cor-secundaria);
+  width: 100%;
+}
+footer {
+  background-color: var(--cor-secundaria);
+  color: var(--quarta-cor);
+  margin-top: 50px;
+}
+.titulos {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
