@@ -52,6 +52,7 @@
 .text-descricao {
   font-size: 16px;
   text-align: justify;
+  margin-top: 1rem;
 }
 
 .btn-comprar {
