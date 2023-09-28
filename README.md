@@ -1,6 +1,10 @@
 # Le Glamour
 Este projeto tem a intenção de simular uma loja de roupas de luxo. Nela você encontra roupas masculinas e femininas de alta classe.
 
+<div align="center">
+<img src="https://github.com/Rian-Fernandes/trabalhoFinalFront/blob/b6f1d0601f22cf898bf611a325272745444e4e25/images/logo.gif">
+ </div>
+
 ## O que você encontra aqui:
 - Página principal;
 - Página de roupas femininas;
@@ -9,7 +13,8 @@ Este projeto tem a intenção de simular uma loja de roupas de luxo. Nela você 
 - Contatos dos fundadores;
 - Fale conosco;
 - Roupas incríveis;
-- 
+
+  
 ## Tecnologias usadas:
 - [Trello](https://trello.com/b/Bv7Wx4qS/trabalho-final-de-front);
 - [Visual Studio Code 1.82](https://code.visualstudio.com/download);
