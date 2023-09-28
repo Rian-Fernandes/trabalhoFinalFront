@@ -68,7 +68,7 @@ form {
   justify-content: flex-end;
 }
 .msg textarea {
-  color: var(--quinta-cor);
+  color: var(--quarta-cor);
   width: 250px;
 }
 .msg label {
@@ -167,17 +167,17 @@ form {
     float: none; /* Remova o float do botão */
     width: 100%; /* Faça o botão ocupar toda a largura */
   }
-  
+
   .img,
   .img1 {
     text-align: center; /* Centralize as imagens */
     margin: 10px 0; /* Ajuste as margens das imagens */
   }
-  
+
   .msg label {
     margin-right: 0; /* Remova a margem direita */
   }
-  
+
   .drop .form-select {
     width: 100%; /* Faça a caixa de seleção ocupar toda a largura */
   }
@@ -202,7 +202,7 @@ form {
   .botão {
     width: 100%; /* Faça o botão ocupar toda a largura */
   }
-  
+
   .img,
   .img1 {
     margin: 5px 0; /* Ajuste as margens das imagens */
