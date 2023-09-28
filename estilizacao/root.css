@@ -1,23 +1,22 @@
 :root {
-    --cor-primaria: #bcaf8c;
-    --cor-secundaria: #283b5e;
-    --cor-terciaria: #4d899f;
-    --quarta-cor: #c4bf9b;
-    --quinta-cor: #ffffff;
-    --sexta-cor: #3f697a;
-    --setima-cor: #000000;
-  }
-  
-  .dark-mode:root {
-    --cor-primaria: #252b39;
-    --cor-secundaria: #396e76;
-    --cor-terciaria: #4d899f;
-    --quarta-cor: #252b39;
-    --quinta-cor: #396e76;
-    --sexta-cor: #396e76;
-    --setima-cor: #fcfcfc;
-  }
+  --cor-primaria: #bcaf8c;
+  --cor-secundaria: #283b5e;
+  --cor-terciaria: #4d899f;
+  --quarta-cor: #c4bf9b;
+  --quinta-cor: #ffffff;
+  --sexta-cor: #3f697a;
+  --setima-cor: #000000;
 
+  --fonte-primaria: "Cinzel";
+  --fonte-secundaria: "Playfair Display";
+}
 
-
-
+.dark-mode:root {
+  --cor-primaria: #222226;
+  --cor-secundaria: #191970;
+  --cor-terciaria: #222226;
+  --quarta-cor: #ff007f;
+  --quinta-cor: #ffffff;
+  --sexta-cor: #ff007f;
+  --setima-cor: #fcfcfc;
+}
