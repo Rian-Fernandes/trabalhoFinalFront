@@ -5,8 +5,9 @@
   margin: auto;
   justify-content: space-between;
   background-color: var(--cor-terciaria);
-  box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 180px;
+  box-shadow: 0px 4px 16px 8px rgba(255, 255, 255, 0.3);
+  border-radius: 150px;
+  margin-top: 42px;
 }
 
 .img-class {
@@ -18,9 +19,14 @@
   width: 500px;
   height: 500px;
   margin: 16px;
-  box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 16px 8px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   max-height: 100%;
+}
+
+.text {
+  color: var(--setima-cor);
+  font-family: var(--fonte-secundaria);
 }
 
 .text-div {
@@ -28,7 +34,7 @@
   width: 800px;
   height: auto;
   padding: 16px;
-  margin-left: 150px;
+  margin-left: 180px;
 }
 
 .text-titulo {
@@ -50,13 +56,13 @@
 .btn-comprar {
   width: 200px;
   height: 60px;
-  border: 3px var(--sexta-cor) solid;
+  border: 3px var(--cor-secundaria) solid;
   border-radius: 20px;
-  background-color: var(--cor-primaria);
+  background-color: var(--quarta-cor);
   color: var(--cor-secundaria);
 }
 
 .btn-comprar:hover {
   cursor: pointer;
-  background-color: aliceblue;
+  background-color: var(--quinta-cor);
 }
