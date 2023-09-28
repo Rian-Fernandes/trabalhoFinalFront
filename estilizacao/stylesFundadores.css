@@ -143,3 +143,29 @@ body .containerf .tituloFundador {
   font-family: var(--fonte-primaria);
   color: var(--setima-cor);
 }
+
+@media screen and (max-width: 576px) {
+  .main1 {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .containers {
+    width: 100%; 
+    max-width: none; 
+    margin: 10px auto; 
+  }
+
+  .containers .card {
+    width: 100%; 
+    max-width: none; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerf {
+    width: 80%; 
+    margin-left: 10%; 
+  }
+}

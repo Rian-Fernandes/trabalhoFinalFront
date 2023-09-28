@@ -63,3 +63,38 @@ body{
   color: #000;
 }
 
+@media screen and (max-width: 576px) {
+  .home {
+    grid-template-columns: 1fr; /* Uma única coluna em telas pequenas */
+    margin-top: 0; /* Remova a margem superior negativa */
+  }
+
+  .home-text {
+    text-align: center; /* Centralize o texto */
+  }
+
+  .home-text h1 {
+    font-size: 3rem; /* Reduza o tamanho da fonte do título */
+  }
+
+  .home-text h5 {
+    font-size: 12px; /* Reduza o tamanho da fonte do subtítulo */
+    margin-bottom: 30px; /* Reduza a margem inferior */
+  }
+
+  .home-image {
+    max-width: 100%; /* Garanta que a imagem se ajuste à largura da tela */
+    width: auto;
+    margin: 0 auto; /* Centralize a imagem */
+  }
+
+  .btn {
+    padding: 10px 40px; /* Reduza o tamanho do botão */
+    font-size: 14px; /* Reduza o tamanho da fonte do botão */
+  }
+}
+
+/* Estilos para telas médias (de 577px a 992px de largura) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Adicione estilos específicos para telas médias aqui, se necessário */
+}

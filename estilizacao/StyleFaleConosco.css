@@ -141,3 +141,70 @@ form {
   border-radius: 8px;
   padding: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .containerFaleConosco {
+    width: 90%; /* Reduza a largura do container */
+    border-radius: 0; /* Remova o arredondamento do container */
+    margin-top: 20px; /* Ajuste a margem superior */
+    flex-direction: column; /* Altere o layout para coluna */
+  }
+
+  .campoNome,
+  .campoE-mail {
+    flex-direction: column; /* Altere o layout dos campos para coluna */
+    align-items: center; /* Centralize os campos */
+    margin: 10px 0; /* Ajuste as margens */
+  }
+
+  .campoNome input,
+  .campoE-mail input,
+  .msg textarea {
+    width: 100%; /* Faça os campos ocuparem toda a largura */
+  }
+
+  .botão {
+    float: none; /* Remova o float do botão */
+    width: 100%; /* Faça o botão ocupar toda a largura */
+  }
+  
+  .img,
+  .img1 {
+    text-align: center; /* Centralize as imagens */
+    margin: 10px 0; /* Ajuste as margens das imagens */
+  }
+  
+  .msg label {
+    margin-right: 0; /* Remova a margem direita */
+  }
+  
+  .drop .form-select {
+    width: 100%; /* Faça a caixa de seleção ocupar toda a largura */
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerFaleConosco {
+    width: 100%; /* Faça o container ocupar toda a largura */
+    margin-top: 10px; /* Ajuste a margem superior */
+  }
+
+  .campoNome,
+  .campoE-mail {
+    margin: 5px 0; /* Ajuste as margens dos campos */
+  }
+
+  .campoNome input,
+  .campoE-mail input,
+  .msg textarea {
+    width: 100%; /* Faça os campos ocuparem toda a largura */
+  }
+
+  .botão {
+    width: 100%; /* Faça o botão ocupar toda a largura */
+  }
+  
+  .img,
+  .img1 {
+    margin: 5px 0; /* Ajuste as margens das imagens */
+  }
+}
