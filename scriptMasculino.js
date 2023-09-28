@@ -40,6 +40,7 @@ controls1.forEach((control) => {
     items1[currentItem1].scrollIntoView({
       behavior: "smooth",
       inline: "center",
+      block: "nearest",
     });
 
     // Adiciona a classe "current-item" ao item atual para destacá-lo
@@ -75,6 +76,7 @@ controls2.forEach((control) => {
     items2[currentItem2].scrollIntoView({
       behavior: "smooth",
       inline: "center",
+      block: "nearest",
     });
 
     items2[currentItem2].classList.add("current-item");
@@ -109,6 +111,7 @@ controls3.forEach((control) => {
     items3[currentItem3].scrollIntoView({
       behavior: "smooth",
       inline: "center",
+      block: "nearest",
     });
 
     items3[currentItem3].classList.add("current-item");

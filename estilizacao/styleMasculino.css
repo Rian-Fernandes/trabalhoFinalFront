@@ -16,6 +16,7 @@ h2 {
   text-align: center; /* Centraliza o texto */
   margin: 1em 0; /* Margem superior e inferior de 1em (16px) e margem lateral 0 */
   font-family: var(--fonte-primaria); /* Define a família de fontes */
+  font-size: 49px;
 }
 
 /* Define estilos para o contêiner principal */
@@ -49,7 +50,7 @@ h2 {
     transparent 0%,
     #283b5e
   ); /* Gradiente de fundo para seta esquerda */
-  opacity: 0.1; /* Opacidade inicial */
+  opacity: 0.2; /* Opacidade inicial */
   cursor: pointer; /* Altera o cursor para indicar interatividade */
   border: none; /* Remove a borda */
 }
@@ -75,7 +76,7 @@ h2 {
 /* Define estilos para a galeria principal */
 .gallery {
   display: flex; /* Exibe os itens em um flex container */
-  flex-flow: row nowrap; /* Orientação horizontal sem quebra de linha */
+  flex-flow: row nowrap; /* Orientação horizontal 'img, sem quebra de linha */
   gap: 15px; /* Espaço entre os itens */
 }
 
