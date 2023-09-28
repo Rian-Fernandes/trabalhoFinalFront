@@ -2,69 +2,135 @@
   text-align: center;
   color: var(--cor-secundaria);
   margin-bottom: 25px;
+  font-family: var(--fonte-primaria);
 }
 .drop {
   height: auto;
-  width: 25%;
+  width: 100%;
   margin: auto;
+  margin-top: 10px;
 }
+
 option :houver {
   background-color: var(--cor-secundaria);
 }
 .campoNome input {
   background-color: var(--cor-secundaria);
   border-radius: 8px;
-  color: white;
+  color: var(--quinta-cor);
+  width: 250px;
+}
+.campoNome {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 .campoNome label {
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   font-size: 20px;
   margin-right: 8px;
+}
+.campoE-mail {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 .campoE-mail input {
   background-color: var(--cor-secundaria);
   border-radius: 8px;
-  color: white;
+  color: var(--quinta-cor);
   margin-top: 10px;
+  width: 250px;
 }
 .campoE-mail label {
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   font-size: 20px;
   margin-right: 8px;
   margin-top: 10px;
 }
 fieldset {
-  width: 50%;
   margin: auto;
 }
 .campoNome,
 .campoE-mail {
   margin: auto;
-  width: fit-content;
 }
 form {
   margin: 130px;
 }
 .msg {
-  margin-right: 8px;
   font-size: 20px;
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  justify-content: flex-end;
+}
+.msg textarea {
+  color: var(--quinta-cor);
+  width: 250px;
 }
 .msg label {
-  color: var(--cor-secundaria);
-  margin-right: 8px;
+  color: var(--cor-primaria);
+  margin-right: 12px;
+  font-family: var(--fonte-primaria);
 }
 .botão {
   background-color: var(--cor-secundaria);
   margin-top: 10px;
   float: right;
   border-radius: 8px;
-  color: white;
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 200px;
+  height: auto;
+}
+.img1 img {
+  width: 200px;
+  height: auto;
+  margin-right: 47px;
 }
 .msg textarea {
-  box-shadow: 0 0 10px black;
+  background-color: var(--cor-primaria);
+  border: 1px solid var(--quinta-cor);
+  box-shadow: var(--setima-cor);
   border-radius: 8px;
+}
+.botão:hover {
+  background-color: var(--setima-cor);
+}
+.campoNome input,
+.campoE-mail input {
+  background-color: var(--cor-primaria);
+  border-radius: 8px;
+  color: var(--setima-cor);
+  width: 250px;
+  border: none;
+  padding: 8px;
+}
+
+.campoNome label,
+.campoE-mail label {
+  color: var(--cor-primaria);
+  font-size: 20px;
+  margin-right: 8px;
+  margin-top: 10px;
+  font-family: var(--fonte-primaria);
+}
+.drop .form-select {
+  width: 30%;
+  margin: auto;
+  background-color: var(--cor-primaria);
+  color: var(--setima-cor);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
 }
