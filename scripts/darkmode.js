@@ -1,6 +1,6 @@
 const html = document.querySelector("html");
-const checkbox = document.querySelector("#switch");
+const themeButton = document.querySelector("#theme-checkbox");
 
-checkbox.addEventListener("change", function () {
-  html.classList.toggle("dark-mode");
+themeButton.addEventListener("change", function () {
+  html.classList.toggle("dark-mode", themeButton.checked);
 });
