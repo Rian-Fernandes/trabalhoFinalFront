@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="./estilizacao/root.css" />
     <link
       rel="stylesheet"
-      href="/trabalhoFinalFront/estilizacao/estilosPaginaPrincipal.CSS"
+      href="/trabalhoFinalFront/estilizacao/estilosPaginaPrincipal.css"
     />
     <link rel="stylesheet" href="./estilizacao/header.css" />
     <link rel="stylesheet" href="./estilizacao/footer.css" />
     <link
       rel="stylesheet"
-      href="/trabalhoFinalFront/estilizacao/StyleFaleConosco.css"
+      href="./estilizacao/StyleFaleConosco.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -136,56 +136,6 @@
       </div>
     </main>
 
-    <script>
-      document
-        .getElementById("formContato")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Impede o envio do formulário
-
-          var nome = document.querySelector("#nome");
-          var email = document.querySelector("#email");
-          var mensagem = document.querySelector("#mensagem");
-
-          if (
-            nome.value === "" ||
-            email.value === "" ||
-            mensagem.value === ""
-          ) {
-            alert("Por favor, preencha todos os campos");
-            return;
-          } else {
-            const user = {
-              nome: nome.value,
-              email: email.value,
-              mensagem: mensagem.value,
-            };
-            localStorage.setItem("user", JSON.stringify(user));
-          }
-
-          // Salvar os dados no localStorage
-
-          alert(
-            "Obrigado " + nome + "! Suas informações foram salvas com sucesso!"
-          );
-          nome.value = "";
-          email.value = "";
-          mensagem.value = "";
-        });
-
-      // Função para acessar os dados
-      function acessarDadosLocalStorage() {
-        var nome = localStorage.getItem("nome");
-        var email = localStorage.getItem("email");
-        var mensagem = localStorage.getItem("mensagem");
-
-        console.log("Nome:", nome);
-        console.log("E-mail:", email);
-        console.log("Mensagem:", mensagem);
-      }
-
-      // Chame a função para acessar os dados quando necessário
-      acessarDadosLocalStorage();
-    </script>
     <section class="">
       <!-- Footer -->
       <footer>
@@ -233,4 +183,5 @@
     </section>
     <script src="./scripts/darkmode.js"></script>
   </body>
+  
 </html>

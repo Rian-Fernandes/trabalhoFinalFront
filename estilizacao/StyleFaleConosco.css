@@ -120,7 +120,7 @@ form {
 .campoE-mail input {
   background-color: var(--setima-cor);
   border-radius: 8px;
-  color: var(--setima-cor);
+  color: var(--quarta-cor);
   width: 250px;
   padding: 8px;
 }
