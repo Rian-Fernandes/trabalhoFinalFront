@@ -84,7 +84,7 @@
     </header>
     <main>
       <h1 class="h1">Fale Conosco</h1>
-      <div class="container">
+      <div class="containerFaleConosco">
         <div class="drop">
           <select class="form-select fale" aria-label="Default select example">
             <option selected>Escolha uma opção</option>
@@ -94,16 +94,22 @@
             <option value="4">Outros</option>
           </select>
         </div>
-        <div class="img"><img src="./images/ternoVerde.png" alt="" /></div>
+        <div class="img"><img src="" alt="" /></div>
         <form id="formContato" action="">
           <fieldset>
             <div class="campoNome">
-              <label for="nome">Nome:</label>
-              <input type="text" name="nome" placeholder="Digite seu nome" />
+              <label class="label" for="nome">Nome:</label>
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder="Digite seu nome"
+              />
             </div>
             <div class="campoE-mail">
-              <label for="e-mail">E-mail:</label>
+              <label class="label" for="e-mail">E-mail:</label>
               <input
+                id="email"
                 type="text"
                 name="e-mail"
                 placeholder="Digite seu e-mail"
@@ -125,7 +131,7 @@
           </fieldset>
         </form>
         <div class="img1">
-          <img src="./images/vestidoRosa.png" alt="" />
+          <img src="" alt="" />
         </div>
       </div>
     </main>
@@ -136,27 +142,34 @@
         .addEventListener("submit", function (event) {
           event.preventDefault(); // Impede o envio do formulário
 
-          var nome = document.querySelector('[name="nome"]').value;
-          var email = document.querySelector('[name="e-mail"]').value;
-          var mensagem = document.querySelector('[name="mensagem"]').value;
+          var nome = document.querySelector("#nome");
+          var email = document.querySelector("#email");
+          var mensagem = document.querySelector("#mensagem");
 
           if (
-            nome.trim() === "" ||
-            email.trim() === "" ||
-            mensagem.trim() === ""
+            nome.value === "" ||
+            email.value === "" ||
+            mensagem.value === ""
           ) {
             alert("Por favor, preencha todos os campos");
             return;
+          } else {
+            const user = {
+              nome: nome.value,
+              email: email.value,
+              mensagem: mensagem.value,
+            };
+            localStorage.setItem("user", JSON.stringify(user));
           }
 
           // Salvar os dados no localStorage
-          localStorage.setItem("nome", nome);
-          localStorage.setItem("email", email);
-          localStorage.setItem("mensagem", mensagem);
 
           alert(
             "Obrigado " + nome + "! Suas informações foram salvas com sucesso!"
           );
+          nome.value = "";
+          email.value = "";
+          mensagem.value = "";
         });
 
       // Função para acessar os dados
@@ -191,8 +204,8 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="link text-white"
-                    >Link da pg fale conosco</a
+                  <a href="faleConosco.html" class="link text-white"
+                    >Clique aqui e fale conosco</a
                   >
                 </li>
               </ul>
@@ -204,8 +217,8 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!" class="link text-white"
-                    >Link da pg nossos fundadores</a
+                  <a href="nossosFundadores.html" class="link text-white"
+                    >Clique aqui e veja nossos fundadores</a
                   >
                 </li>
               </ul>
