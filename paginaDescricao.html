@@ -28,7 +28,10 @@
     />
     <!-- JavaScript -->
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./index.js" defer></script>
     <script src="./scripts/scriptProduto.js" defer></script>
+    <script src="./scripts/btnComprar.js" defer></script>
+
     <title>Descrição dos Produtos</title>
   </head>
   <body>
@@ -100,9 +103,12 @@
             sed dolore mollitia nulla, illo dolor quam consequuntur aliquid
             magnam.
           </p>
-          <h2 id="product-price" class="text-valor">Valor: R$899,90</h2>
-          <button class="btn-comprar">Compre Agora!</button>
+          <h2 class="text-valor">Valor: R$</h2>
+          <h2 id="product-price" class="text-valor">899,90</h2>
         </div>
+        <button class="btn-comprar" onclick="aperteAqui()">
+          Compre Agora!
+        </button>
       </section>
     </div>
     <section class="">

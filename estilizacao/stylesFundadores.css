@@ -1,11 +1,13 @@
 .main1 {
+  padding-top: 20px;
+  padding-bottom: 100px;
   min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--cor-primaria);
 }
-.container {
+.containers {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -14,7 +16,7 @@
 .containers .card {
   width: 100%;
   max-width: 300px;
-  height: 200px;
+  height: 205px;
   align-items: center;
   background-color: var(--cor-primaria);
 }
@@ -24,7 +26,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   background: var(--cor-primaria);
 }
 .containers .card .icon .img {
@@ -45,7 +47,7 @@
   align-items: center;
   z-index: 100;
   transition: 0.5s;
-  transform: translateY(100px);
+  transform: translateY(90px);
 }
 
 .containers .card .slide1,
@@ -63,10 +65,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: 9px;
   transition: 0.5s;
   transform: translateY(-10px);
-
   background-color: var(--quinta-cor);
 }
 .containers .card:hover .slide2 {
@@ -81,10 +82,10 @@
   color: var(--sexta-cor);
 }
 .containers .card .slide2 .content h3 {
-  margin: 0 0 3px 0;
-  padding: 0;
-  font-size: 24px;
+  margin: 0 0 5px 0;
+  font-size: 20px;
   text-align: center;
+  font-family: var(--fonte-primaria);
   color: var(--cor-secundaria);
 }
 
@@ -125,7 +126,19 @@
   cursor: pointer;
 }
 
-.tituloFundador {
+.containerf {
+  width: 600px;
+  padding: 30px;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: var(--sexta-cor);
+  display: inline-block;
+  box-shadow: 0 10px 100px var(--setima-cor);
+}
+body .containerf .tituloFundador {
   text-align: center;
   font-family: var(--fonte-primaria);
   color: var(--setima-cor);
