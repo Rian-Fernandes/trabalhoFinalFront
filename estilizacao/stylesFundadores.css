@@ -1,4 +1,4 @@
-main {
+.main1 {
   min-height: 50px;
   display: flex;
   align-items: center;
@@ -123,4 +123,10 @@ main {
 .containers {
   padding-right: 20px;
   cursor: pointer;
+}
+
+.tituloFundador {
+  text-align: center;
+  font-family: var(--fonte-primaria);
+  color: var(--setima-cor);
 }

@@ -1,3 +1,4 @@
+
 let navLinks = document.querySelectorAll(".carousel .nav-link");
 let slides = document.querySelectorAll(".carousel .slides img");
 let overlays = document.querySelectorAll(".carousel .bar");
@@ -6,13 +7,14 @@ let easeInOutQuart = "cubic-bezier(0.77, 0, 0.175, 1)";
 slides[0].classList.add("active");
 navLinks[0].classList.add("active");
 
+window.addEventListener("DOMContentLoaded", () => {
+slides[0].classList.add("active");
+});
+
 navLinks.forEach((navLink, activeIndex) => {
-  // Crie um escopo de função para armazenar o valor de activeIndex
   navLink.addEventListener("click", () => {
-    // nav-link
     navLinks.forEach(navLink => navLink.classList.remove("active"));
     navLink.classList.add("active");
-    // slide
     let currentSlide = document.querySelector(".carousel .slides img.active");
     let slideFadeOut = currentSlide.animate(
       [
@@ -43,7 +45,6 @@ navLinks.forEach((navLink, activeIndex) => {
         { duration: 600, easing: "ease-out", fill: "forwards" }
       );
     };
-    // overlay
     maxZIndex += 1;
     let activeOverlay = overlays[activeIndex];
     activeOverlay.style.zIndex = `${maxZIndex}`;

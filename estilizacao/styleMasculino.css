@@ -1,0 +1,104 @@
+/* Define estilos globais para redefinir margens e preenchimentos padrão e usar a caixa de modelo de borda */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define o estilo do corpo da página */
+body {
+  background-color: var(--cor-primaria); /* Cor de fundo do corpo */
+}
+
+/* Define estilos para os cabeçalhos h1 */
+h2 {
+  color: var(--sexta-cor); /* Cor do texto do cabeçalho */
+  text-align: center; /* Centraliza o texto */
+  margin: 1em 0; /* Margem superior e inferior de 1em (16px) e margem lateral 0 */
+  font-family: var(--fonte-primaria); /* Define a família de fontes */
+}
+
+/* Define estilos para o contêiner principal */
+.container1 {
+  position: relative; /* Posição relativa para controle de posicionamento interno */
+  padding: 15px; /* Espaçamento interno */
+  max-width: 640px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Define estilos para a div que envolve a galeria com rolagem horizontal */
+.gallery-wrapper {
+  overflow-x: auto; /* Adiciona rolagem horizontal */
+}
+
+/* Define estilos para os botões de seta esquerda e direita */
+.arrow-left,
+.arrow-right {
+  position: absolute; /* Posição absoluta para posicionamento preciso */
+  top: 0; /* Alinha no topo do contêiner */
+  left: 0; /* Alinha à esquerda do contêiner */
+  right: auto; /* Redefine a posição direita */
+  bottom: 0; /* Alinha na parte inferior do contêiner */
+  font-size: 20px; /* Tamanho da fonte */
+  line-height: 250px; /* Alinha verticalmente o ícone */
+  width: 40px; /* Largura do botão de seta */
+  color: var(--cor-terciaria); /* cor da seta */
+  transition: all 600ms ease-in-out; /* Transição suave para animações */
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    #283b5e
+  ); /* Gradiente de fundo para seta esquerda */
+  opacity: 0.1; /* Opacidade inicial */
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  border: none; /* Remove a borda */
+}
+
+/* Estilos de foco para botões de seta durante o hover */
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+/* Estilos específicos para a seta direita */
+.arrow-right {
+  right: 0; /* Alinha à direita do contêiner */
+  left: auto; /* Redefine a posição esquerda */
+  text-align: right; /* Alinha o texto à direita */
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #283b5e
+  ); /* Gradiente de fundo para seta direita */
+}
+
+/* Define estilos para a galeria principal */
+.gallery {
+  display: flex; /* Exibe os itens em um flex container */
+  flex-flow: row nowrap; /* Orientação horizontal sem quebra de linha */
+  gap: 15px; /* Espaço entre os itens */
+}
+
+/* Define estilos para os itens da galeria */
+.item {
+  width: 250px; /* Largura fixa dos itens */
+  height: 250px; /* Altura fixa dos itens */
+  flex-shrink: 0; /* Evita que os itens encolham */
+  transition: all 600ms ease-in-out; /* Transição suave para animações de itens */
+  opacity: 0.5; /* Opacidade inicial dos itens */
+}
+
+/* Define estilos para o item atualmente selecionado na galeria */
+.current-item {
+  opacity: 1; /* Opacidade total para destacar o item atual */
+}
+
+/* Esconde a barra de rolagem para navegadores específicos */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem para Chrome, Safari e Opera */
+}
+
+.gallery-wrapper {
+  -ms-overflow-style: none; /* Esconde a barra de rolagem para IE e Edge */
+  scrollbar-width: none; /* Esconde a barra de rolagem para Firefox */
+}

@@ -1,5 +1,5 @@
 .banner{
-    background: var(--quarta-cor);
+    background: var( --cor-terciaria);
     color: var(--quinta-cor);
     text-align: center;
     padding: 1.5em 2em;

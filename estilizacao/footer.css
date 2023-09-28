@@ -21,3 +21,12 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.tituloft {
+  font-family: var(--fonte-primaria);
+  margin: 0;
+}
+
+.link {
+  font-family: var(--fonte-secundaria);
+}
