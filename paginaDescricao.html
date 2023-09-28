@@ -28,14 +28,17 @@
     />
     <!-- JavaScript -->
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./index.js" defer></script>
     <script src="./scripts/scriptProduto.js" defer></script>
+    <script src="./scripts/btnComprar.js" defer></script>
+
     <title>Descrição dos Produtos</title>
   </head>
   <body>
     <header>
       <nav class="nav-bar">
         <div class="logo">
-          <img src="./images/logo.gif" alt="Logo da página" />
+          <img id="logo" src="./images/logo.gif" alt="Logo da página" />
         </div>
         <div class="nav-ancoras">
           <a href="paginaPrincipal.html">Home</a>
@@ -100,9 +103,12 @@
             sed dolore mollitia nulla, illo dolor quam consequuntur aliquid
             magnam.
           </p>
-          <h2 id="product-price" class="text-valor">Valor: R$899,90</h2>
-          <button class="btn-comprar">Compre Agora!</button>
+          <h2 class="text-valor">Valor: R$</h2>
+          <h2 id="product-price" class="text-valor">899,90</h2>
         </div>
+        <button class="btn-comprar" onclick="aperteAqui()">
+          Compre Agora!
+        </button>
       </section>
     </div>
     <section class="">
@@ -114,7 +120,7 @@
           <div class="row align-items-center">
             <!--Grid column-->
             <div class="logoft col-lg-6 col-md-12 mb-4 mb-md-0">
-              <img src="./images/logo.gif" alt="Logo da página" />
+              <img id="logoF" src="./images/logo.gif" alt="Logo da página" />
             </div>
 
             <!--Grid column-->
@@ -123,7 +129,7 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="link text-white"
+                  <a href="./faleConosco.html" class="link text-white"
                     >Link da pg fale conosco</a
                   >
                 </li>
@@ -136,7 +142,7 @@
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!" class="link text-white"
+                  <a href="./nossosFundadores.html" class="link text-white"
                     >Link da pg nossos fundadores</a
                   >
                 </li>

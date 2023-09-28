@@ -1,6 +1,7 @@
 .h1 {
+  margin-top: 20px;
   text-align: center;
-  color: var(--cor-secundaria);
+  color: var(--sexta-cor);
   margin-bottom: 25px;
   font-family: var(--fonte-primaria);
 }
@@ -15,10 +16,10 @@ option :houver {
   background-color: var(--cor-secundaria);
 }
 .campoNome input {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
   border-radius: 8px;
-  color: var(--quinta-cor);
   width: 250px;
+  border: 3px var(--quarta-cor) solid;
 }
 .campoNome {
   margin: auto;
@@ -26,9 +27,10 @@ option :houver {
   justify-content: flex-end;
 }
 .campoNome label {
-  color: var(--cor-primaria);
+  color: var(--quarta-cor);
   font-size: 20px;
   margin-right: 8px;
+  font-family: var(--fonte-secundaria);
 }
 .campoE-mail {
   margin: auto;
@@ -41,6 +43,7 @@ option :houver {
   color: var(--quinta-cor);
   margin-top: 10px;
   width: 250px;
+  border: 3px var(--quarta-cor) solid;
 }
 .campoE-mail label {
   color: var(--cor-primaria);
@@ -69,7 +72,7 @@ form {
   width: 250px;
 }
 .msg label {
-  color: var(--cor-primaria);
+  color: var(--quarta-cor);
   margin-right: 12px;
   font-family: var(--fonte-primaria);
 }
@@ -78,15 +81,21 @@ form {
   margin-top: 10px;
   float: right;
   border-radius: 8px;
-  color: var(--cor-primaria);
+  color: var(--quarta-cor);
   margin-bottom: 10px;
 }
 
-.container {
+.containerFaleConosco {
+  width: 50%;
+  margin: auto;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--cor-secundaria);
+  border-radius: 100px;
+  box-shadow: 0px 4px 16px 8px rgba(255, 255, 255, 0.3);
 }
 
 .img img {
@@ -99,8 +108,8 @@ form {
   margin-right: 47px;
 }
 .msg textarea {
-  background-color: var(--cor-primaria);
-  border: 1px solid var(--quinta-cor);
+  background-color: var(--setima-cor);
+  border: 3px solid var(--quarta-cor);
   box-shadow: var(--setima-cor);
   border-radius: 8px;
 }
@@ -109,17 +118,16 @@ form {
 }
 .campoNome input,
 .campoE-mail input {
-  background-color: var(--cor-primaria);
+  background-color: var(--setima-cor);
   border-radius: 8px;
-  color: var(--setima-cor);
+  color: var(--quarta-cor);
   width: 250px;
-  border: none;
   padding: 8px;
 }
 
 .campoNome label,
 .campoE-mail label {
-  color: var(--cor-primaria);
+  color: var(--quarta-cor);
   font-size: 20px;
   margin-right: 8px;
   margin-top: 10px;
@@ -130,7 +138,73 @@ form {
   margin: auto;
   background-color: var(--cor-primaria);
   color: var(--setima-cor);
-  border: none;
   border-radius: 8px;
   padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .containerFaleConosco {
+    width: 90%; /* Reduza a largura do container */
+    border-radius: 0; /* Remova o arredondamento do container */
+    margin-top: 20px; /* Ajuste a margem superior */
+    flex-direction: column; /* Altere o layout para coluna */
+  }
+
+  .campoNome,
+  .campoE-mail {
+    flex-direction: column; /* Altere o layout dos campos para coluna */
+    align-items: center; /* Centralize os campos */
+    margin: 10px 0; /* Ajuste as margens */
+  }
+
+  .campoNome input,
+  .campoE-mail input,
+  .msg textarea {
+    width: 100%; /* Faça os campos ocuparem toda a largura */
+  }
+
+  .botão {
+    float: none; /* Remova o float do botão */
+    width: 100%; /* Faça o botão ocupar toda a largura */
+  }
+  
+  .img,
+  .img1 {
+    text-align: center; /* Centralize as imagens */
+    margin: 10px 0; /* Ajuste as margens das imagens */
+  }
+  
+  .msg label {
+    margin-right: 0; /* Remova a margem direita */
+  }
+  
+  .drop .form-select {
+    width: 100%; /* Faça a caixa de seleção ocupar toda a largura */
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerFaleConosco {
+    width: 100%; /* Faça o container ocupar toda a largura */
+    margin-top: 10px; /* Ajuste a margem superior */
+  }
+
+  .campoNome,
+  .campoE-mail {
+    margin: 5px 0; /* Ajuste as margens dos campos */
+  }
+
+  .campoNome input,
+  .campoE-mail input,
+  .msg textarea {
+    width: 100%; /* Faça os campos ocuparem toda a largura */
+  }
+
+  .botão {
+    width: 100%; /* Faça o botão ocupar toda a largura */
+  }
+  
+  .img,
+  .img1 {
+    margin: 5px 0; /* Ajuste as margens das imagens */
+  }
 }

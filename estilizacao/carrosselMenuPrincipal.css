@@ -5,6 +5,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
+    font-family: var(--fonte-primaria);
     padding: 1em 0 0.5em 0;
     margin-top: auto; 
     align-self: flex-end;
@@ -71,4 +72,34 @@
         &.active {
           color: black;
           pointer-events: none;
+        }
+
+        @media screen and (max-width: 576px) {
+          .carrossel__titulo {
+            font-size: 16px; 
+          }
+        
+          .carousel {
+            flex-direction: column; 
+          }
+        
+          .slides {
+            position: relative;
+            top: 0;
+            left: 0;
+          }
+        
+          .slides img {
+            display: none;
+          }
+        
+          .overlays {
+            width: 100%; 
+            height: auto; 
+          }
+        
+          .nav-links {
+            padding: 0; 
+            text-align: center; 
+          }
         }

@@ -25,6 +25,7 @@
 
 .vestido-imagem {
   height: 500px;
+  border-radius: 30px;
 }
 .carousel-inner {
   text-align: center;
@@ -55,7 +56,10 @@
 }
 .bolsa-imagem {
   height: 500px;
+  border-radius: 30px;
 }
 .sapato-imagem {
   height: 500px;
+  border-radius: 30px;
 }
+
