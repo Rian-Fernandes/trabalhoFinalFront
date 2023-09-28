@@ -54,3 +54,4 @@ navLinks.forEach((navLink, activeIndex) => {
     );
   });
 });
+
