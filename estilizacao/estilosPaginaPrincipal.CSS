@@ -7,47 +7,6 @@ body{
   background-color: var(--cor-primaria);
 }
 
-.nav-bar {
-  background-color: var(--cor-secundaria); 
-  padding: 0px 10px; 
-  display: flex;
-  align-items: center;
-  height:40px;
-  position: relative;
-  justify-content: space-between;
-}
-
-.logo{
-  position: relative;
-  height: 100%;
-}
-
-.logo img {
-  height: 100%; 
-  object-fit: contain;
-}
-
-.nav-ancoras {
-  width: 700px;
-  justify-content: space-between;
-  display: flex;
- 
-  
-}
-
-.nav-ancoras li {
-  margin-left: 200px; 
-}
-
-.nav-ancoras a {
-  text-decoration: none;
-  color: var(--cor-primaria); 
-}
-
-.nav-ancoras a:hover {
-  text-decoration: underline;
-}
-
 .home {
   position: relative;
   height: 100vh;
@@ -102,6 +61,5 @@ body{
   background: coral;
   border: 2px solid #523458;
   color: #000;
-
 }
 

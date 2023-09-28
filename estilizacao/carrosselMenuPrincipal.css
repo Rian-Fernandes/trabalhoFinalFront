@@ -5,6 +5,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
+    font-family: var(--fonte-primaria);
     padding: 1em 0 0.5em 0;
     margin-top: auto; 
     align-self: flex-end;

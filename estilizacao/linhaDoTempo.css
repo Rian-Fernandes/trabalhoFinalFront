@@ -15,6 +15,15 @@
     margin-left: -3px;
   }
   
+  .py-5 {
+    padding-top: 5rem!important;
+    padding-bottom: 3rem!important;
+}
+
+  .container.py-5 {
+  background-color: var(--cor-primaria);
+}
+
   /* Container around content */
   .timeline-2 {
     position: relative;

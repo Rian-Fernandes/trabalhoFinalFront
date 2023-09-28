@@ -9,11 +9,15 @@
     margin-top: 0px;
     font-size: 18px;
     font-weight: 700;
+    font-family: var(--fonte-primaria);
+    color: var(--quinta-cor);
 }
 
 .banner__texto{
     font-weight: 500;
     margin: 1em 0;
+    font-family: var(--fonte-secundaria);
+    color: var(--quinta-cor);
 }
 
 .banner__pesquisa {
@@ -23,6 +27,7 @@
     border-radius: 24px;
     padding: 1em;
     width: 100%;
+    font-family: var(--fonte-secundaria);
 }
 
 .banner__pesquisa::placeholder {
