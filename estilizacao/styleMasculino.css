@@ -7,19 +7,19 @@
 
 /* Define o estilo do corpo da página */
 body {
-  background-color: #bcaf8c; /* Cor de fundo do corpo */
+  background-color: var(--cor-primaria); /* Cor de fundo do corpo */
 }
 
 /* Define estilos para os cabeçalhos h1 */
-h1 {
-  color: #4d899f; /* Cor do texto do cabeçalho */
+h2 {
+  color: var(--sexta-cor); /* Cor do texto do cabeçalho */
   text-align: center; /* Centraliza o texto */
   margin: 1em 0; /* Margem superior e inferior de 1em (16px) e margem lateral 0 */
-  font-family: sans-serif; /* Define a família de fontes */
+  font-family: var(--fonte-primaria); /* Define a família de fontes */
 }
 
 /* Define estilos para o contêiner principal */
-.container {
+.container1 {
   position: relative; /* Posição relativa para controle de posicionamento interno */
   padding: 15px; /* Espaçamento interno */
   max-width: 640px; /* Largura máxima do contêiner */
@@ -42,7 +42,7 @@ h1 {
   font-size: 20px; /* Tamanho da fonte */
   line-height: 250px; /* Alinha verticalmente o ícone */
   width: 40px; /* Largura do botão de seta */
-  color: #8cbca2; /* cor da seta */
+  color: var(--cor-terciaria); /* cor da seta */
   transition: all 600ms ease-in-out; /* Transição suave para animações */
   background: linear-gradient(
     to left,
