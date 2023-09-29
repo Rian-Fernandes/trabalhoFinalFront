@@ -66,26 +66,26 @@ body{
 @media screen and (max-width: 576px) {
   .home {
     grid-template-columns: 1fr; /* Uma única coluna em telas pequenas */
-    margin-top: 0; /* Remova a margem superior negativa */
+    margin-top: 0; /* Removendo a margem superior negativa */
   }
 
   .home-text {
-    text-align: center; /* Centralize o texto */
+    text-align: center; /* Centralizando o texto galerinha*/
   }
 
   .home-text h1 {
-    font-size: 3rem; /* Reduza o tamanho da fonte do título */
+    font-size: 3rem; /* Reduzindo o tamanho da fonte do título */
   }
 
   .home-text h5 {
-    font-size: 12px; /* Reduza o tamanho da fonte do subtítulo */
-    margin-bottom: 30px; /* Reduza a margem inferior */
+    font-size: 12px; /* Reduzindo o tamanho da fonte do subtítulo */
+    margin-bottom: 30px; /* Reduzindo a margem inferior */
   }
 
   .home-image {
-    max-width: 100%; /* Garanta que a imagem se ajuste à largura da tela */
+    max-width: 100%; /* Espero que a imagem se ajuste à largura da tela */
     width: auto;
-    margin: 0 auto; /* Centralize a imagem */
+    margin: 0 auto; /* Centralizando a imagem */
   }
 
   .btn {
